@@ -1,0 +1,32 @@
+extends layout
+
+block scripts
+  script(src='/js/jquery.min.js')
+  script(src='/js/all.js')
+
+block content
+  include /widget/header
+  .center
+    .content
+      .titleBar
+      .details
+        header.profileHeader
+          .center
+            h2.name= profile.partialName
+            h3.location= profile.location
+          .profilePhoto(style='background-image:url("'+profile.profilePhoto.src+'")')
+        .center
+          section.about
+            h3.title About Me
+            p= profile.about
+          section.skills
+            h3.title Skills I have
+            p= profile.skillsihave
+          section.skills
+            h3.title Skills I want
+            p= profile.skillsiwant
+          section.projects
+            h3.title= profile.firstName + "'s Projects"
+            .cardFlowLayout
+              for project in projects
+                +projectCard(project)
