@@ -1,18 +1,12 @@
-Monicas-Hammer
-==============
+Restli Demo
+===========
 
-A collaborative platform for women to work together on home projects.
+A short presentation on my project using LinkedIn's Restli framework.
 
 ### Quickstart
 
 #### Start server
 
 ```bash
-$ node app
-```
-
-#### Start development
-
-```bash
-$ gulp
+$ node .
 ```
