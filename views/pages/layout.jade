@@ -2,7 +2,8 @@ doctype html
 html
   head
     title= title
+    link(rel='stylesheet', href='/css/reset.css')
     link(rel='stylesheet', href='/css/style.css')
-  body.preload(class!= pageId + 'Page')
+  body.preload()
     block content
     block scripts
